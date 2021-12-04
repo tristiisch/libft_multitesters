@@ -1,0 +1,6 @@
+[submodule "tripouille"]
+	path = tripouille
+	url = https://github.com/Tripouille/libftTester.git
+[submodule "warmachine"]
+	path = warmachine
+	url = https://github.com/ska42/libft-war-machine.git
