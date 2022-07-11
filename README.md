@@ -1,23 +1,26 @@
 # libft_multitesters
-Libft checker online on Linux and MacOS. Just add a Pull request with your code.
-Tests will run at https://github.com/tristiisch/libft_multitesters/actions
+Libft checker online on Linux and MacOS.
 
+## How it works
+Just add a pull request with your code at the root, tests will run at https://github.com/tristiisch/libft_multitesters/actions
 
-If you didn't want to create a pull request or login to git, you can reproduise this repo.
+## Reproduce this repo
 
-Add testers as submodule
+If you don't want to create a pull request or login to git, you can reproduce this repo.
+
+Add testers as submodule :
 ```
 git submodule add https://github.com/Tripouille/libftTester.git tripouille
 git submodule add https://github.com/ska42/libft-war-machine.git warmachine
 ```
 
 Add theses files to your repo
-https://github.com/tristiisch/libft_multitesters/tree/main/.github/workflows
+https://github.com/tristiisch/libft_multitesters/tree/main/.github/workflows like this :
 ```
-mkdir -p .github/workflows
-wget https://github.com/tristiisch/libft_multitesters/blob/main/.github/workflows/Norminette.yml
-wget https://github.com/tristiisch/libft_multitesters/blob/main/.github/workflows/Build.yml
-wget https://github.com/tristiisch/libft_multitesters/blob/main/.github/workflows/Tester.yml
+mkdir -p .github/workflows && cd .github/workflows 
+wget https://raw.githubusercontent.com/tristiisch/libft_multitesters/main/.github/workflows/Norminette.yml
+wget https://raw.githubusercontent.com/tristiisch/libft_multitesters/main/.github/workflows/Build.yml
+wget https://raw.githubusercontent.com/tristiisch/libft_multitesters/main/.github/workflows/Tester.yml
 ```
 
-Commit & Push, the next time you push or when someone want to make a pull request to your repo, it will launch the test.
+Commit & Push, the next time you push or when someone wants to make a pull request to your repo, the test will be launched.
